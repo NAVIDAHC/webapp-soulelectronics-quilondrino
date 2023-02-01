@@ -1,11 +1,10 @@
 @extends('homepage.layouts.app')
 @section('homepage')
         @include('homepage.includes.nav')
+        @include('homepage.includes.announcement')
         @include('homepage.includes.services')
         @include('homepage.includes.about')
-        @include('homepage.includes.announcement')
         @include('homepage.includes.contact')
-        @include('homepage.includes.team')
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
@@ -17,6 +16,5 @@
                 </div>
             </div>
         </footer>
-         @include('homepage.includes.team')
         
         @endsection

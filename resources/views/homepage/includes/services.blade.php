@@ -17,33 +17,21 @@
                 </div>
                 <div class="col-md-4">
                     <img class="services" src="assets/img/services/accessories.svg">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="my-3">Gadget & Accessories</h4>
                     <p class="text-muted">Find the perfect gadget or accessory to pair with your existing ones.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="services" src="assets/img/services/sale.svg">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="my-3">Toys Sale</h4>
                     <p class="text-muted">Shop for the perfect gift or find a toy to bring fun in your life.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="services" src="assets/img/services/game.svg">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="my-3">Game Installation</h4>
                     <p class="text-muted">Get the all the games you want on your device.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="services" src="assets/img/services/shop.svg">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="my-3">Custom Orders</h4>
                     <p class="text-muted">Need help buying specific items? No worries, we got you covered.</p>
                 </div>
