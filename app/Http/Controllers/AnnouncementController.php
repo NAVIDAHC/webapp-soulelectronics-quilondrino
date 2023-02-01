@@ -31,4 +31,24 @@ class AnnouncementController extends Controller
     
         return view('announcement.index');
     }
+
+    public function edit(User $announcement)
+    {
+        return view('announcement.edit', compact('announcements'));
+    }
+
+    public function update(Request $request, User $announcement)
+    {
+        $user->update($request->all());
+
+        return redirect()->route('announcement');
+    }
+
+    public function destroy(User $announcement)
+    {
+        $announcement->delete();
+
+        return redirect()->route('announcement')->with('success', 'Announcement deleted successfully');
+    }
 }
+

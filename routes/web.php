@@ -44,6 +44,12 @@ Route::post('/announcement/add', [AnnouncementController::class, 'store'])
         ->name('announcement.store');
 Route::get('/announcements', 'AnnouncementController@index')
         ->name('announcements.index');
+Route::get('/announcement/edit/{announcement}', [AnnouncementController::class, 'edit'])
+        ->middleware(['auth','verified'])
+        ->name('announcement.edit');
+Route::delete('/announcement/destroy/{announcement}', [AnnouncementController::class, 'destroy'])
+        ->middleware(['auth','verified'])
+        ->name('announcement.destroy');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
