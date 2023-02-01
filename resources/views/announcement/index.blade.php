@@ -4,7 +4,7 @@
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Users') }}
         </h2>
-        <a class="add-user" href="{{ route('users.add')}}">add user</a>
+        <a class="add-user" href="{{ route('announcement.store')}}">add announcement</a>
         </div>
     </x-slot>
 
@@ -22,7 +22,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--@foreach ($announcements as $announcement)
+                            @foreach ($announcements as $announcement)
                                 <tr>
                                     <td>{{$announcement->title}}</td>
                                     <td>{{$announcement->body}}</td>
@@ -38,7 +38,7 @@
                                     </td>
                                 </tr>
                             @endforeach
-                            -->
+                            
                         </tbody>
                         </table>
                 </div>

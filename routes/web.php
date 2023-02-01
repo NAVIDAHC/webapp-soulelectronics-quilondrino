@@ -21,7 +21,7 @@ Route::get('/users', [UserController::class, 'index'])
 Route::get('/edit/{user}', [UserController::class, 'edit'])
         ->middleware(['auth', 'verified'])
         ->name('users.edit');
-Route::delete('/{user', [UserController::class, 'destroy'])
+Route::delete('/{user}', [UserController::class, 'destroy'])
         ->middleware(['auth', 'verified'])
         ->name('users.destroy');
 Route::put('{user}', [UserController::class, 'update'])
@@ -36,6 +36,14 @@ Route::post('users/add', [UserController::class, 'store'])
 Route::get('/announcement', [AnnouncementController::class, 'index'])
         ->middleware(['auth','verified'])
         ->name('announcement');
+Route::get('/announcement/add', [AnnouncementController::class, 'add'])
+        ->middleware(['auth','verified'])
+        ->name('announcement.add');
+Route::post('/announcement/add', [AnnouncementController::class, 'store'])
+        ->middleware(['auth','verified'])
+        ->name('announcement.store');
+Route::get('/announcements', 'AnnouncementController@index')
+        ->name('announcements.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

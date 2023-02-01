@@ -1,7 +1,6 @@
 @extends('homepage.layouts.app')
 @section('homepage')
         @include('homepage.includes.nav')
-        @include('homepage.includes.announcement')
         @include('homepage.includes.services')
         @include('homepage.includes.about')
         @include('homepage.includes.contact')
